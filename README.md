@@ -1,34 +1,46 @@
-# Seller E-commerce (React Learning Project)
+# React E-Commerce
 
-Yeh project React revise karne ke liye bhi ready hai, aur codebase me Hindi (Roman) comments add kiye gaye hain taaki flow jaldi samajh aaye.
+A single-page e-commerce frontend built with React, Vite, and Tailwind CSS.
+It supports product listing, category filtering, product details, and local CRUD flows (create/edit/delete) with localStorage persistence.
 
-## Run project
+## Tech Stack
+
+- React 19
+- Vite 7
+- React Router DOM 7
+- Tailwind CSS 4
+- Axios
+- React Toastify
+- Nanoid
+
+## Project Features
+
+- Product listing with card-based UI
+- Category-wise filtering
+- Product details page
+- Create, edit, and delete product flows
+- Data persistence in localStorage
+- API fallback support using Fake Store API
+
+## Local Setup
+
 ```bash
 npm install
 npm run dev
 ```
 
-## Build project
+## Production Build
+
 ```bash
 npm run build
 npm run preview
 ```
 
-## Deployment
-- Step-by-step guide: `docs/DEPLOYMENT.md`
-- Recommended platforms: Vercel, Netlify
+## Environment Variables
 
-## Docs (Detailed)
-- `docs/PROJECT_GUIDE_HINDI.md`
-- `docs/FOLDER_FILE_EXPLAINED_HINDI.md`
-- `docs/REACT_REVISION_FROM_CODEBASE_HINDI.md`
-- `docs/README.md`
-- `docs/DEPLOYMENT.md`
+Create a `.env` file from `.env.example`:
 
-## Key features
-- Product listing
-- Category filter
-- Product details
-- Add/Edit/Delete product
-- localStorage persistence
-- Initial API fallback (`fakestoreapi`)
+```env
+VITE_API_BASE_URL=https://fakestoreapi.com
+VITE_BASE_PATH=/
+```
