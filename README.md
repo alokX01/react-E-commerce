@@ -3,6 +3,10 @@
 A single-page e-commerce frontend built with React, Vite, and Tailwind CSS.
 It supports product listing, category filtering, product details, and local CRUD flows (create/edit/delete) with localStorage persistence.
 
+## Live Demo
+
+- Production: https://react-e-commerce-git-main-aloks-projects-b37e5233.vercel.app
+
 ## Tech Stack
 
 - React 19
@@ -44,3 +48,8 @@ Create a `.env` file from `.env.example`:
 VITE_API_BASE_URL=https://fakestoreapi.com
 VITE_BASE_PATH=/
 ```
+
+## Deployment
+
+- Platform: Vercel
+- Status: Production Ready
