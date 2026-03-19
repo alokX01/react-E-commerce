@@ -10,6 +10,7 @@ const Home = () => {
 
   // URL se optional category param milta hai (example: /category/jewelery).
   const { category } = useParams();
+  const decodedCategory = category ? decodeURIComponent(category) : null;
 
   // Jab tak data proper array me na aaye, loading UI dikhana safe hai.
   if (!products || !Array.isArray(products)) {
@@ -17,8 +18,8 @@ const Home = () => {
   }
 
   // Agar category route me hai to filtered list, warna full list.
-  const filteredProducts = category
-    ? products.filter((p) => p.category === category)
+  const filteredProducts = decodedCategory
+    ? products.filter((p) => p.category === decodedCategory)
     : products;
 
   return (
@@ -27,8 +28,8 @@ const Home = () => {
 
       {/* Left side nav fixed hai, isliye content ko margin-left diya gaya hai. */}
       <div className="ml-[15%] w-[85%] p-5 pt-[2%] flex flex-wrap gap-5 overflow-x-hidden overflow-y-auto">
-        {filteredProducts.map((p, i) => (
-          <Link to={`/details/${p.id}`} key={i} className="w-[18%] min-w-[200px]">
+        {filteredProducts.map((p) => (
+          <Link to={`/details/${p.id}`} key={p.id} className="w-[18%] min-w-[200px]">
             <div className="card p-5 border bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border-gray-200 h-[30vh] flex flex-col justify-center items-center overflow-hidden">
               {/* Product image ko background-image style se render kiya gaya hai. */}
               <div
