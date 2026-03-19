@@ -11,7 +11,7 @@
     "check": "npm run lint && npm run build"
   },
   "engines": {
-    "node": ">=20.19.0"
+    "node": "22.x"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
