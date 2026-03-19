@@ -1,0 +1,5 @@
+@import "tailwindcss" source(none);
+@source "./**/*.{js,jsx,ts,tsx}";
+@source "../index.html";
+
+/* Tailwind CSS v4 yahin se globally load hoti hai. */
