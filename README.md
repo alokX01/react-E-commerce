@@ -5,8 +5,7 @@ It supports product listing, category filtering, product details, and local CRUD
 
 ## Live Demo
 
-- Production: https://react-e-commerce-git-main-aloks-projects-b37e5233.vercel.app
-
+- Production: https://react-e-commerce-five-rho.vercel.app
 ## Tech Stack
 
 - React 19
